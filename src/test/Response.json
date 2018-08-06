@@ -1,0 +1,14 @@
+{
+  "RestResponse": {
+    "messages": [
+      "Total [249] records found."
+    ],
+    "result": [
+      {
+        "name": "Afghanistan",
+        "alpha2_code": "AF",
+        "alpha3_code": "AFG"
+      }
+    ]
+  }
+}
