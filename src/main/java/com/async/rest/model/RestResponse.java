@@ -3,8 +3,8 @@ package com.async.rest.model;
 import java.util.List;
 
 public class RestResponse {
-    List<String> messages;
-    List<CountryDTO> result;
+    public List<String> messages;
+    public List<CountryDTO> result;
 
     public void setMessages(List<String> messages) {
         this.messages = messages;

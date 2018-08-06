@@ -32,7 +32,7 @@ public class AsyncController {
             public void onSuccess(List<CountryDTO> result) {
                 ResponseEntity<List<CountryDTO>> responseEntity = new ResponseEntity<>(result, HttpStatus.OK);
                 deferredResult.setResult(responseEntity);
-                System.out.println(responseEntity.getBody());
+                responseEntity.getBody().forEach(c -> System.out.println(c.getName()));
             }
 
             @Override

@@ -2,14 +2,14 @@ package com.async.rest.model;
 
 public class CountryRestResponse {
 
-    private RestResponse restResponse;
+    public RestResponse RestResponse;
 
-    public RestResponse getRestResponse() {
-        return restResponse;
+    public com.async.rest.model.RestResponse getRestResponse() {
+        return RestResponse;
     }
 
-    public void setRestResponse(RestResponse restResponse) {
-        this.restResponse = restResponse;
+    public void setRestResponse(com.async.rest.model.RestResponse RestResponse) {
+        RestResponse = RestResponse;
     }
 
 }
