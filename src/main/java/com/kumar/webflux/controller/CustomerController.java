@@ -1,5 +1,7 @@
 package com.kumar.webflux.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,8 +12,6 @@ import com.kumar.webflux.dto.Customer;
 import com.kumar.webflux.service.CustomerService;
 
 import reactor.core.publisher.Flux;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/customers")

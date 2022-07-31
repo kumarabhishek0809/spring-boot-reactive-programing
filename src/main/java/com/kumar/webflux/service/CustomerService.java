@@ -1,5 +1,7 @@
 package com.kumar.webflux.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -7,8 +9,6 @@ import com.kumar.webflux.dao.CustomerDao;
 import com.kumar.webflux.dto.Customer;
 
 import reactor.core.publisher.Flux;
-
-import java.util.List;
 
 @Service
 public class CustomerService {
