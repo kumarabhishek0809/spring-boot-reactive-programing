@@ -25,7 +25,7 @@ public class CustomerController {
         return service.loadAllCustomers();
     }
 
-    @GetMapping(value = "/stream",produces = MediaType.TEXT_EVENT_STREAM_VALUE)
+    @GetMapping(value = "/stream", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
     public Flux<Customer> getAllCustomersStream() {
         return service.loadAllCustomersStream();
     }

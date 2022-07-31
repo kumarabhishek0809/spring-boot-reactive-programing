@@ -55,4 +55,18 @@ public class CustomerService {
 				.flatMap(repository::insert)// saving the entity
 				.map(AppUtils::entityToDTO); // converting entity to DTO
 	}
+
+	public Mono<com.kumar.webflux.dto.Customer> updateCustomer(//
+			Mono<com.kumar.webflux.dto.Customer> customer, //
+			String id) {
+
+		return repository.findById(id)//
+				.flatMap(c -> customer.map(AppUtils::dtoToentity)//
+						.doOnNext(e -> e.setId(id)))//
+				.flatMap(repository::save).map(AppUtils::entityToDTO);
+	}
+
+	public Mono<Void> deleteCustomer(String id) {
+		return repository.deleteById(id);
+	}
 }

@@ -22,11 +22,14 @@ public class RouterConfig {
 	}
 
 	@Bean
-	public RouterFunction<ServerResponse> routerFunction() {
-		return RouterFunctions.route().GET("/router/customers", handler::loadCustomers)
-				.GET("/router/customers/stream", streamHandler::getCustomers)
-				.GET("/router/customer/{input}", handler::findCustomer)
-				.POST("/router/customer/save", handler::saveCustomer).build();
+	public RouterFunction<ServerResponse> routerFunction() {//
+		return RouterFunctions.route().GET("/router/customers", handler::loadCustomers)//
+				.GET("/router/customers/stream", streamHandler::getCustomers)//
+				.GET("/router/v1/customers/stream", streamHandler::customers)//
+				.GET("/router/customer/{input}", handler::findCustomer)//
+				.POST("/router/customer/save", handler::saveCustomer)//
+				.POST("/router/customer/v1/save", streamHandler::saveCustomer)//
+				.build();
 
 	}
 }
