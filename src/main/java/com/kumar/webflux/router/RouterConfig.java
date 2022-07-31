@@ -13,7 +13,6 @@ import com.kumar.webflux.handler.CustomerStreamHandler;
 public class RouterConfig {
 
 	private CustomerHandler handler;
-
 	private CustomerStreamHandler streamHandler;
 
 	public RouterConfig(CustomerHandler handler, CustomerStreamHandler streamHandler) {
