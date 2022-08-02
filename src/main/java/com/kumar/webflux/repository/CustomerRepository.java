@@ -1,4 +1,4 @@
-package com.kumar.webflux.dao.repository;
+package com.kumar.webflux.repository;
 
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 import org.springframework.stereotype.Repository;

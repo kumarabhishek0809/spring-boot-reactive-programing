@@ -2,9 +2,9 @@ package com.kumar.webflux.utils;
 
 import com.kumar.webflux.entity.Customer;
 
-public class AppUtils {
+public class TransformerUtils {
 
-	private AppUtils() {
+	private TransformerUtils() {
 
 	}
 
