@@ -20,7 +20,6 @@ public class CustomerStreamHandler {
 	}
 
 	public Mono<ServerResponse> getCustomers(ServerRequest request) {
-		request.pathVariable("customerId");
 		return ServerResponse.ok()//
 				.contentType(MediaType.TEXT_EVENT_STREAM)//
 				.body(service.getCustomers(), Customer.class);
